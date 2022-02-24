@@ -1,17 +1,105 @@
 .container {
+    .scrollContainer {
+        position: fixed;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        bottom: 0;
+        left: 130px;
+        cursor: pointer;
+        justify-content: center;
+        width: auto;
+        height: 24px;
+        .scrollIcon {
+            height: 24px;
+            transition: all 0.35s ease-out;
+            &:hover {
+                background-color: #f4f0ec;
+                // border: 1px solid white;
+                border-radius: 50%;
+            }
+        }
+        .scrollText {
+            margin-left: 8px;
+            font-family: Spartan;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 13px;
+            color: #928A97;    
+            transition: all 0.35s ease-out;
+            margin-top: 2px;
+            &:hover {
+                color: white;
+                font-size: 13px;
+                line-height: 14px;
+            }
+        }
+    }
     .homeBg {
         position: absolute;
         height: 100%;
         width: 100%;
     }
-    .homeContainer {
-        .navBg {
-            position: relative;
-            height: 111.85px;
-            width: 151.05px;
-            margin-top: 30px;
-            margin-left: 50px;
-        }
+    .navBg {
         position: absolute;
+        height: 111.85px;
+        width: 151.05px;
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+    .homeContainer {
+        position: relative;
+        margin-left: 100px;
+
+        .content {
+            padding: 30px;
+            margin-top: 200px;
+            display: flex;
+            flex-direction: column;
+            .header {
+                display: flex;
+                flex-direction: column;
+                .heading {
+                    width: auto;
+                    font-family: Spartan;
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 38px;
+                    line-height: 43px;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    -webkit-text-stroke: 1.5px #FFFFFF;
+                    // color: #FFFFFF;
+                }
+                .subheading {
+                    margin-top: 16px;
+                    font-family: Spartan;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 27px;
+                    color: #FFFFFF;
+                }
+            }
+            .socialContainer {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 200px;
+                margin-top: 30px;
+                .socialIcon {
+                    height: 36px;
+                    width: 36px;
+
+                    &:hover {
+                        background-color: #f4f0ec;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
 }

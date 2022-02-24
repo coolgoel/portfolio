@@ -1,9 +1,9 @@
 .navbarElement {
-    width: 58px;
+    width: auto;
     height: 20px;
     font-family: Spartan;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 20px;
     color: #928A97;
@@ -11,4 +11,5 @@
 }
 .isActive {
     color: #F44336;
+    font-weight: bolder;
 }
