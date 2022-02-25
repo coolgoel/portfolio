@@ -6,6 +6,10 @@ import NavbarComponent from 'components/navbar/NavbarComponent'
 function Home() {
 
     const handleScrollClick = () => {
+
+    }
+
+    const handleAboutButtonClick = () => {
         
     }
 
@@ -17,10 +21,10 @@ function Home() {
             </Head>
             <div className={styles.homeBg}>
                 <Image 
-                    src="/homeBg.png"
+                    src="/bgFull.png"
                     alt="background image"
                     layout="fill"
-                    objectFit="cover"
+                    // objectFit="cover"
                 />
             </div>
             <div className={styles.navBg}>
@@ -30,19 +34,21 @@ function Home() {
                     layout="fill"
                 />
             </div>
-            <div className={styles.scrollContainer} onClick={handleScrollClick}>
-                <div className={styles.scrollIcon}>
-                    <Image
-                        src={"/scroll.svg"}
-                        alt="scroll icon"
-                        width="24px"
-                        height="24px"
-                    />                
-                </div>
-                <span className={styles.scrollText}>
-                    Scroll
-                </span>
-            </div>
+            {/* 
+                <div className={styles.scrollContainer} onClick={handleScrollClick}>
+                    <div className={styles.scrollIcon}>
+                        <Image
+                            src={"/scroll.svg"}
+                            alt="scroll icon"
+                            width="24px"
+                            height="24px"
+                        />                
+                    </div>
+                    <span className={styles.scrollText}>
+                        Scroll
+                    </span>
+                </div> 
+            */}
             <div className={styles.homeContainer}>
                 <NavbarComponent />
                 <div className={styles.content}>
@@ -89,6 +95,72 @@ function Home() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className={styles.aboutSection}>
+                <div className={styles.aboutBg}>
+                    <Image
+                        src="/aboutBg.png"
+                        alt="bg pic"
+                        height="200px"
+                        width="155px"
+                    />
+                </div>
+                <div className={styles.aboutImage}>
+                    <Image
+                        src="/profileImg.png"
+                        alt="profile pic"
+                        layout="fill"
+                    />
+                </div>
+                <div className={styles.content}>
+                    <span className={styles.caption}>
+                        About Me
+                    </span>
+                    <span className={styles.description}>
+                        An inquisitive Computer Science Engineering student, skilled in leadership, 
+                        seeking to leverage solid development skills with focus on collaboration, 
+                        communication and passion.
+                    </span>
+                    <button className={styles.aboutBtn} onClick={handleAboutButtonClick}>
+                        Download CV
+                    </button>
+                </div>
+            </div>
+            <div className={styles.skillSection}>
+                <div className={styles.skillBg}>
+                    <Image
+                        src="/skillBg.png"
+                        alt="bg pic"
+                        layout="fill"
+                    />
+                </div>
+                <div className={styles.skillImgBg}>
+                    <Image
+                        src="/aboutBg.png"
+                        alt="bg pic"
+                        height="200px"
+                        width="155px"
+                    />
+                </div>
+                <div className={styles.skillImage}>
+                    <Image
+                        src="/skillImg.png"
+                        alt="profile pic"
+                        layout="fill"
+                    />
+                </div>
+                <div className={styles.content}>
+                    <span className={styles.caption}>
+                        Skills
+                    </span>
+                    <span className={styles.description}>
+                        I enjoy creating things that live on the internet, 
+                        whether that be websites, applications, or anything in between.
+                    </span>
+                    <div className={styles.skillContainer}>
+                        
+                    </div>
+                </div>   
             </div>
         </div>
     )
