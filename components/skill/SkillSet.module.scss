@@ -1,0 +1,14 @@
+.skillSetContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .span {
+        margin-top: 8px;
+        font-family: Spartan;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+    }
+}

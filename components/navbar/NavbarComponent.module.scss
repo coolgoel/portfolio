@@ -5,4 +5,20 @@
     margin-left: 38px;
     justify-content: space-between;
     width: 560px;
+    position: relative;
+
+    .navBg {
+        position: absolute;
+        height: 111.85px;
+        width: 151.05px;
+        z-index: 1;
+        top: 30px;
+        left: -36px;
+    }
+    .navbarElementContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 560px;
+    }
 }

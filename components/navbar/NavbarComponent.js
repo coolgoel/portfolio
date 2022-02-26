@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import NavbarElement from 'components/navbar/NavbarElement'
 import { navbarConstants } from 'constants/index'
 import styles from './NavbarComponent.module.scss'
+import Image from 'next/image'
 
 const NavbarComponent = () => {
     
@@ -28,18 +29,27 @@ const NavbarComponent = () => {
 
     return (
         <div className={styles.navbarContainer}>
-            {
-                navbarConstants.map((item, index) => {
-                    return (
-                        <NavbarElement key={index}
-                            name={item.name}
-                            link={item.link}
-                            isActive={activeNavElements[index]}
-                            onClick={() => handleNavItemClick(index)}
-                        />
-                    )
-                })
-            }
+            <div className={styles.navBg}>
+                <Image 
+                    src="/images/navbar/navElementBg.png"
+                    alt="background image"
+                    layout="fill"
+                />
+            </div>
+            <div className={styles.navbarElementContainer}>
+                {
+                    navbarConstants.map((item, index) => {
+                        return (
+                            <NavbarElement key={index}
+                                name={item.name}
+                                link={item.link}
+                                isActive={activeNavElements[index]}
+                                onClick={() => handleNavItemClick(index)}
+                            />
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }

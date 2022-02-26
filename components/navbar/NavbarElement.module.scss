@@ -8,8 +8,16 @@
     line-height: 20px;
     color: #928A97;
     cursor: pointer;
+    z-index: 2;
+
+    &:hover {
+        color: white;
+    }
 }
 .isActive {
     color: #F44336;
     font-weight: bolder;
+    &:hover {
+        color: #F44336;
+    }
 }
