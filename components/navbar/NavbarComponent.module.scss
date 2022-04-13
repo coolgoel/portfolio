@@ -20,5 +20,37 @@
         flex-direction: row;
         justify-content: space-between;
         width: 560px;
+
+        :nth-child(1) {
+            &:hover {
+                color: grey;
+            }
+        }
+        :nth-child(2) {
+            &:hover {
+                color: white;
+            }
+        }
+        :nth-child(3) {
+            &:hover {
+                color: white;
+            }
+        }
+        :nth-child(4) {
+            &:hover {
+                color: white;
+            }
+        }
+        :nth-child(5) {
+            &:hover {
+                color: white;
+            }
+        }
+        .isActive {
+            &:hover{
+                color: #F44336;
+            }
+        }
     }
 }
+

@@ -21,7 +21,6 @@ const NavbarComponent = () => {
     }, [])
     
     const handleNavItemClick = (index) => {
-        console.log("item clicked", index)
         let updatedActiveNavElements = new Array(navbarConstants.length).fill(false);
         updatedActiveNavElements[index] = true;
         setActiveNavElements(updatedActiveNavElements);
